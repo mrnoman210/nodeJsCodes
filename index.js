@@ -12,7 +12,7 @@ var connection = mysql.createConnection({
 connection.connect();
 
 connection.query(
-  "insert into salary_sheet value(22)",
+  `insert into salary_sheet values (27, "Noman","Programmer",9000)`,
   function (err, results, fields) {
     if (err) {
       throw err;
