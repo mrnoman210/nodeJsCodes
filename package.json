@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.19"
+    "mysql": "^2.18.1",
+    "mysqli": "^3.1.4",
+    "nodemon": "^2.0.19",
+    "sql": "^0.78.0"
   }
 }

@@ -1,10 +1,32 @@
 // const os = require("os");
 // const https = require("HTTPS");
 const fs = require("fs");
+var mysql = require("mysql");
+var connection = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "new",
+});
 
+connection.connect();
+
+connection.query(
+  "insert into salary_sheet value(22)",
+  function (err, results, fields) {
+    if (err) {
+      throw err;
+    }
+
+    console.log(results);
+    console.log(fields);
+  }
+);
+
+connection.end();
 // const currentPath = "./new";
 // const newPath = "./database";
-
+// con.end();
 // fs.unlink("./database", function () {
 //   fs.rmdirSync("./database");
 // });
